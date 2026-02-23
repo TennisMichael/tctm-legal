@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – Tennisclub Turnier Manager</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #222232;
+      color: rgba(255,255,255,0.85);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 32px 16px 60px;
+    }
+    .container { max-width: 560px; margin: 0 auto; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .lang-switch button {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.55);
+      padding: 4px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .lang-switch button.active {
+      border-color: #fff;
+      color: #fff;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .updated {
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 24px;
+      margin-bottom: 6px;
+    }
+    p {
+      color: rgba(255,255,255,0.65);
+      white-space: pre-line;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="lang-switch">
+      <button id="btn-de" class="active" onclick="setLang('de')">Deutsch</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- DEUTSCH -->
+    <div id="de">
+      <h1>Datenschutzerklärung</h1>
+      <p class="updated">Stand: Februar 2026</p>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>Tennisclub Turnier Manager
+Entwickler: Michael Seidenschnur
+Kontakt: tennis.turnier.manager@gmail.com</p>
+
+      <h2>2. Welche Daten werden gespeichert?</h2>
+      <p>Die App speichert ausschließlich folgende Daten lokal auf Ihrem Gerät:
+
+• Spielernamen und optionale Vereinszugehörigkeiten
+• Turnierdaten (Name, Datum, Paarungen, Ergebnisse)
+• App-Einstellungen (Timer-Standard, Sprache)
+
+Es werden keine Daten an Server oder Dritte übertragen. Es findet keine Cloud-Synchronisierung statt.</p>
+
+      <h2>3. Kein Tracking, keine Analyse</h2>
+      <p>Die App enthält keinerlei Analyse-Tools, Werbe-SDKs oder Tracking-Mechanismen. Es werden keine Nutzungsstatistiken erhoben.</p>
+
+      <h2>4. In-App-Käufe (Google Play)</h2>
+      <p>Die App bietet ein jährliches Abonnement über den Google Play Store an. Zahlungsdaten und Kaufabwicklung werden ausschließlich von Google verarbeitet. Der Entwickler hat keinen Zugriff auf Zahlungsdaten.</p>
+
+      <h2>5. Benachrichtigungen</h2>
+      <p>Die Benachrichtigungsberechtigung wird ausschließlich verwendet, um den Ablauf des Rundenzeitmers anzuzeigen. Benachrichtigungsdaten verlassen das Gerät nicht.</p>
+
+      <h2>6. Speicherzugriff</h2>
+      <p>Die Speicherberechtigung wird ausschließlich verwendet, um vom Nutzer initiierte Backups zu exportieren oder zu importieren. Es werden keine Dateien ohne ausdrückliche Nutzeraktion gelesen oder geschrieben.</p>
+
+      <h2>7. Datenlöschung</h2>
+      <p>Alle lokal gespeicherten Daten können jederzeit über Einstellungen → Alle Daten zurücksetzen vollständig gelöscht werden. Eine Deinstallation der App entfernt ebenfalls alle gespeicherten Daten.</p>
+
+      <h2>8. Kontakt</h2>
+      <p>Bei Fragen wenden Sie sich bitte an:
+tennis.turnier.manager@gmail.com</p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="en" class="hidden">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: February 2026</p>
+
+      <h2>1. Data Controller</h2>
+      <p>Tennisclub Turnier Manager
+Developer: Michael Seidenschnur
+Contact: tennis.turnier.manager@gmail.com</p>
+
+      <h2>2. Data Collected</h2>
+      <p>The app stores the following data locally on your device only:
+
+• Player names and optional club affiliations
+• Tournament data (name, date, pairings, results)
+• App settings (timer default, language)
+
+No data is transmitted to servers or third parties. There is no cloud synchronization.</p>
+
+      <h2>3. No Tracking or Analytics</h2>
+      <p>The app contains no analytics tools, advertising SDKs, or tracking mechanisms. No usage statistics are collected.</p>
+
+      <h2>4. In-App Purchases (Google Play)</h2>
+      <p>The app offers a yearly subscription via Google Play. Payment processing is handled exclusively by Google. The developer has no access to payment data.</p>
+
+      <h2>5. Notifications</h2>
+      <p>Notification permission is used solely to alert you when the round timer expires. No notification data leaves the device.</p>
+
+      <h2>6. Storage Access</h2>
+      <p>Storage permission is used only to export or import user-initiated backups. No files are accessed without explicit user action.</p>
+
+      <h2>7. Data Deletion</h2>
+      <p>All locally stored data can be deleted at any time via Settings → Reset all data. Uninstalling the app also removes all stored data.</p>
+
+      <h2>8. Contact</h2>
+      <p>For questions please contact:
+tennis.turnier.manager@gmail.com</p>
+    </div>
+
+  </div>
+  <script>
+    function setLang(lang) {
+      document.getElementById('de').classList.toggle('hidden', lang !== 'de');
+      document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
